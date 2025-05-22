@@ -14,17 +14,12 @@ mat-card{
     width: 100%;
     border-collapse: collapse;
 
-    >tr{
+    >thead , tbody{
+        tr{
         border-bottom: 1px solid rgba(0,0,0,0.4);
         cursor: pointer;
         &:last-child{
             border-bottom: 0;
-        }
-        &:first-child{
-            cursor: unset;
-            &:hover{
-                background-color: unset;
-            }
         }
         >td{
             height: 48px;
@@ -46,5 +41,12 @@ mat-card{
             background-color: rgba(0,0,0,0.4);
         }
     }
+    .head-th{
+        cursor: unset;
+        &:hover{
+            background-color: unset;
+        }
+    }
+}
 
 }
